@@ -10,3 +10,4 @@
             @include('users.users', ['users' => $users])
         </div>
     </div>
+@endsection
