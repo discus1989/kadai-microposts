@@ -21,7 +21,7 @@ class CreateFavoritesTable extends Migration
             
             //外部キー制約
             $table->foreign('user_id')->references('id')->on('users')->onDelete('cascade');
-            $table->foreign('micropost_id')->references('id')->on('microposts')->ondelete('cascade');
+            $table->foreign('micropost_id')->references('id')->on('microposts')->onDelete('cascade');
             
             //重複の除外
             $table->unique(['user_id', 'micropost_id']);
